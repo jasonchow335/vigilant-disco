@@ -24,4 +24,4 @@ run test()
     
 
 ## Author
-    Chun Chow
+    Jason Chow
