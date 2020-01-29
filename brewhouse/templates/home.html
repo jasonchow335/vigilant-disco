@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Barnaby's Brewhouse</title>
+    </head>
+    <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="/sales_predictor">Sales Predictor</a>
+            <a href="/production_planner">Production Planner</a>
+    </div>
+    <body>
+        <h1>Brew Process Monitering and Inventory Management</h1>
+        <form method="POST">
+            <p>
+                <input type="text" input name="name" placeholder="Tank Name">
+                <input type="text" input name="beer_style" placeholder="Beer Style">
+                <input type="submit" name="button" value="Start Brewing">
+            </p>
+            <p>
+                <input type="text" input name="tank" placeholder="Tank Name">
+                <input type="submit" name="button" value="Stop Brewing">
+            </p>
+        </form>
+
+        <h2>Currently Brewing</h2>
+        <p>Format: [Tank Name, Beer Style, Start Date, End Date]</p>
+        {% for item in data[0]%}
+        <p>{{item}}</p>
+        {% endfor %}
+
+        <h2>Current Stock</h2>
+        {% for item in data[1]%}
+        <p>{{item}}</p>
+        {% endfor %}
+    </body>
+</html>

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "c:\Users\chowt\Downloads\Barnaby`s Brewhouse\Barnaby`s Brewhouse\main.py", line 339, in <module>
+    main()
+  File "c:\Users\chowt\Downloads\Barnaby`s Brewhouse\Barnaby`s Brewhouse\main.py", line 319, in main
+    ys.stderr = logfile
+NameError: name 'ys' is not defined
+
+Traceback (most recent call last):
+  File "c:\Users\chowt\Downloads\Barnaby`s Brewhouse\Barnaby`s Brewhouse\main.py", line 339, in <module>
+    main()
+  File "c:\Users\chowt\Downloads\Barnaby`s Brewhouse\Barnaby`s Brewhouse\main.py", line 319, in main
+    ys.stderr = logfile
+NameError: name 'ys' is not defined
+

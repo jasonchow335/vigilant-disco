@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Barnaby's Brewhouse</title></head>
+    <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="/sales_predictor">Sales Predictor</a>
+            <a href="/production_planner">Production Planner</a>
+    </div>
+    <body>
+        <h1>Production Planner</h1>
+        <form method="POST">
+            <p><input type="submit" name="button" value="Suggest Production"></p>
+        </form>
+        {% for item in data[0]%}
+        <p>{{item}}</p>
+        {% endfor %}
+        {% for item in data[1]%}
+        <p>{{item}}</p>
+        {% endfor %}
+    </body>
+</html>

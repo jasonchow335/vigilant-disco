@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Barnaby's Brewhouse</title></head>
+    <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="/sales_predictor">Sales Predictor</a>
+            <a href="/production_planner">Production Planner</a>
+    </div>
+    <body>
+        <h1>Sales Predictor</h1>
+        <form method="POST">
+            <p>
+                <input type="month" name="month" value="2019-11">
+                Beer Style:
+                <select name='beer_style'>
+                    <option value="Organic Red Helles">Organic Red Helles</option>
+                    <option value="Organic Pilsner">Organic Pilsner</option>
+                    <option value="Organic Dunkel">Organic Dunkel</option>
+                </select>
+                <input type="submit" name="button" value="Predict Sales">
+            </p>
+        </form>
+        {% for item in data%}
+        <p>{{item}}</p>
+        {% endfor %}
+    </body>
+</html>
